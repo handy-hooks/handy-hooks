@@ -1,3 +1,3 @@
 import { useInitialMount } from "./useInitialMount";
 
-export default useInitialMount;
+module.exports = useInitialMount;
