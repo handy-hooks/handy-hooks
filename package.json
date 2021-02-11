@@ -1,6 +1,7 @@
 {
   "name": "react-fancy-hooks",
-  "version": "0.2.0",
+  "version": "0.3.1",
+  "homepage": "https://github.com/react-fancy-hooks/handy-hooks.git",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
