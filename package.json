@@ -3,19 +3,24 @@
   "version": "0.3.10",
   "homepage": "https://github.com/react-fancy-hooks/handy-hooks.git",
   "private": false,
-  "main":"./src/index",
+  "main": "./src/index",
   "dependencies": {
     "@testing-library/react": "^11.1.0",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "react": "^17.0.1",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "@babel/preset-env":"7.12.16",
+    "@babel/preset-react":"7.12.13",
+    "babel-jest":"26.6.3",
+    "jest":"26.6.3",
+    "react-test-renderer":"17.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +40,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "@testing-library/react-hooks": "^5.0.3",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "react-test-renderer": "^17.0.1",
+    "react-dom":"^17.0.1"
   }
 }
