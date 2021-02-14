@@ -1,3 +1,2 @@
-import { useInitialMount } from "./useInitialMount";
-
-export default useInitialMount;
+export { useInitialMount } from "./useInitialMount";
+export { useUniqueID } from "./useUniqueID";

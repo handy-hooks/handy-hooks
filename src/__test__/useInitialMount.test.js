@@ -1,7 +1,5 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import React from "react";
-import { useInitialMount } from "./useInitialMount";
-import { render } from "@testing-library/react";
+import { useInitialMount } from "../useInitialMount";
 
 describe("test useInitialMount", () => {
   test("should return true in the very first render and false in the next renders", () => {
