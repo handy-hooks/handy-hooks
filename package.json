@@ -1,9 +1,11 @@
 {
   "name": "react-fancy-hooks",
   "version": "0.3.12",
-  "homepage": "https://github.com/react-fancy-hooks/handy-hooks.git",
+  "homepage": "https://github.com/react-fancy-hooks/react-fancy-hook.git",
   "private": false,
   "main": "./src/index",
+  "repository": "https://github.com/react-fancy-hooks/react-fancy-hook.git",
+  "author": "Morteza",
   "dependencies": {
     "@testing-library/react": "^11.1.0",
     "@types/jest": "^26.0.15",
