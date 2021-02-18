@@ -27,8 +27,12 @@ useUniqueID- returns a unique ID that remains constant across component renders.
 const ID= useUniqueID()
 ```
 
+**usePrevious**
+usePrevious-returns the previous value of a prop or state.
 
-
+```js
+const previousValue=usePrevious()
+```
 
 
 
