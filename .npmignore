@@ -6,3 +6,5 @@ styleguide/
 coverage/
 yarn.lock
 .babelrc
+build
+src/__test__
