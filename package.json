@@ -1,11 +1,16 @@
 {
   "name": "react-fancy-hooks",
-  "version": "0.3.16-development",
+  "version": "0.3.19-development",
   "private": false,
-  "homepage": "https://github.com/react-fancy-hooks/react-fancy-hook.git",
+  "description": "A collection of useful react custom hooks",
+  "homepage": "https://github.com/react-fancy-hooks/react-fancy-hooks",
   "repository": "https://github.com/react-fancy-hooks/react-fancy-hook.git",
   "license": "MIT",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "hooks",
     "custom hooks",
@@ -21,13 +26,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:umd": "rollup -c ./rollup.config.js",
+    "build": "tsdx build --tsconfig tsconfig.json",
     "compile": "npm-run-all -p compile:es2015 compile:es5 compile:cjs compile:types",
     "compile:es2015": "tsc -p ./tsconfig.es2015.json",
     "compile:es5": "tsc -p ./tsconfig.es5.json",
     "compile:cjs": "tsc -p ./tsconfig.cjs.json",
     "compile:types": "tsc -p ./tsconfig.types.json",
-    "build": "npm-run-all -s compile build:umd",
     "test": "jest",
     "eject": "react-scripts eject"
   },
@@ -41,20 +45,19 @@
     "@babel/preset-env": "7.12.16",
     "@babel/preset-react": "7.12.13",
     "@testing-library/react": "^11.1.0",
+    "@testing-library/react-hooks": "^5.0.3",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
-    "@testing-library/react-hooks": "^5.0.3",
     "babel-jest": "^26.6.3",
     "jest": "^26.6.3",
     "npm-run-all": "^4.1.5",
     "react-dom": "^17.0.1",
     "react-test-renderer": "^17.0.1",
-    "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
     "rollup": "^2.39.1",
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-terser": "^7.0.2",
+    "tsdx": "^0.14.1",
     "typescript": "^4.1.2"
   }
 }
