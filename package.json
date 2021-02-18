@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "tsdx build --tsconfig tsconfig.json",
-    "test": "jest --coverage"
+    "test": "tsdx test  --coverage"
   },
   "eslintConfig": {
     "extends": [
