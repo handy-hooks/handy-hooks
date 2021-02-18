@@ -32,7 +32,7 @@
     "compile:es5": "tsc -p ./tsconfig.es5.json",
     "compile:cjs": "tsc -p ./tsconfig.cjs.json",
     "compile:types": "tsc -p ./tsconfig.types.json",
-    "test": "jest",
+    "test": "jest --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
