@@ -35,5 +35,29 @@ const previousValue=usePrevious()
 ```
 
 
+**useIsMounted**
+useIsMounted- return a function you can call it to be sure if the component is mounted or not. 
+the best use case is in async function and set state.
+
+Example
+```js
+const Results = () => {
+  const [items, setItems] = useState([])
+  const isMounted = useIsMounted()
+
+  useEffect(() => {
+    fetchItems().then((newItems) => {
+      // only set state if the component
+      // is still mounted after receiving
+      // the async data
+      if (isMounted()) {
+        setItems(newItems)
+      }
+    })
+  }, [isMounted])
+
+  // render UI
+}
+```
 
 
