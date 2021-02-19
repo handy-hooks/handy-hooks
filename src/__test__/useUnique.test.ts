@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react-hooks";
-import { useUniqueId } from "../useUniqueID";
+import { useUniqueId } from "../package/useUniqueID";
 
 describe("test useUniqueId", () => {
   test("should returns `id1` a unique id that remains constant across component renrender", () => {
